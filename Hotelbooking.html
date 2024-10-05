@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Site</title>
+    <link rel="stylesheet" href="/asset/css/style.css">
+</head>
+<body>
+    
+            <ul class="sidebar">
+                <button onclick="hideSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button>
+                <a href="#main"><button class="">Home</button></a>
+                <a href="#section_container"><button class="">About</button></a>
+                <a href="#services"><button class="">Services</button></a>
+                <a href="#explore"><button class="">Explore</button></a>
+                <a href="#footer-col"><button>contact</button></a>
+            </ul>
+            
+        <nav>
+            <div class="btn">
+                <marquee behavior="" direction="left"><button style="border: none;"><i>Royale Majestic Hotels Suite</i></button></marquee>
+                <a href="#main"><button class="hideOnMobile">Home</button></a>
+                <a href="#section_container"><button class="hideOnMobile">About</button></a>
+                <a href="#services"><button class="hideOnMobile">Services</button></a>
+                <a href="#explore"><button class="hideOnMobile">Explore</button></a>
+                <a href="#footer-col"><button class="hideOnMobile">contact</button></a>
+                <button class="hideOnMobile"></button>
+                <button class="menu-button" type="button" onclick="showSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="27px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></button>
+            </div>
+        </nav>
+    <div class="main" id="main">
+        <div class="body">
+            <h2>Beautiful <span style="color: crimson;">Sorroundings, </span>Make yourself at home in our Hotel...</h2> 
+            <p><span style="color: crimson;">Our</span> service are entertaining and we give the best care</p>
+            <a href="#section-rooms"><button>Book Now</button></a>
+        </div>
+    </div>
+
+    <form action="" class="form">
+        <div class="input-group">
+            <span><i class="far fa-calendar"></i></span>
+            <div>
+                <label for="check-in">CHECK IN</label>
+                <input type="text" name="" id="" placeholder="check in">
+            </div>
+        </div>
+
+        <div class="input-group">
+            <span><i class="far fa-calendar"></i></span>
+            <div>
+                <label for="check-out">CHECK OUT</label>
+                <input type="text" name="" id="" placeholder="check out">
+            </div>
+        </div>
+
+        <div class="input-group">
+            <span><i class="fa-solid fa-user"></i></span>
+            <div>
+                <label for="guest">GUEST</label>
+                <input type="text" name="" id="" placeholder="Guest">
+            </div>
+        </div>
+        <div>
+            <button>CHECK OUT</button>
+        </div>
+    </form>
+
+    <div class="section_container" id="section_container">
+        <div class="about_img">
+            <img src="/asset/image/hotel2.jpeg" alt="" height="400px" width="500px">
+        </div>
+        <div class="about_content">
+           <div class="sub_header">
+                <p>ABOUT US</p>
+                <div></div>
+           </div>
+            <h2>YOUR BEST HOLIDAY OF ENJOYABLE MOMENTS ARE HERE!</h2>
+            <P class="description">
+                Royale majestic is a place of beautiful experience 
+                and aesthetical view of enjoyable moment.with a focus on quality 
+                accomodations, our platform is dedicated to ensure that travler(s) 
+                embark on their dream holidays filled with love and memories. We have 
+                branches in different locations depemding on the type of comfort you want
+                and we have therapy sections for settling differences between loves ones.
+            </P>
+            <p style="display: none; " id="view" class="description" >
+                In Our hotel,we give newly weddded couple a quiet and comfortable
+                Apartment especially in their first check-in to enjoy their alone 
+                time and connect better and also free meal service for a day.
+            </p>
+            <button type="button" onclick="seeMore()">Read More</button>
+        </div>
+    </div>
+
+    <div style="text-align: center; ">
+        <div class="sub_header1">
+            <p>OUR ROOM VIEWS</p>
+            <div></div>
+        </div>
+      <h2>YOUR BEST HOLIDAY OF ENJOYABLE MOMENTS ARE HERE!</h2>
+   </div>
+
+    <div class="section_rooms" id="section-rooms">
+       
+          <div class="room_grid">
+                <div class="rooms_img">
+                    <img src="/asset/image/hotel3.jpeg" alt="" height="400px" width="450px">
+                </div>
+                <div class="room_icon">
+                    <span><i class="fa-solid fa-heart"></i></span>
+                    <span> <i class="fa-solid fa-thumbs-up" id="thumbs"></i></span>
+                </div>
+                <div class="room_details">
+                    <h4>Deluxe Ocean view</h4>
+                    <p>luxury bearthtaking Ocean view from your suite window.</p>
+                    <h5>Starting from <span>#70,000/night</span></h5>
+                    <!-- <input type="number" placeholder="Mobile Number"> -->
+                    <button type="submit" id="book" onclick="bookRoom()">Book Now</button>
+                </div>
+          </div>
+       
+       
+        <div class="room_grid">
+             <div class="rooms_img">
+                 <img src="/asset/image/hotel4.jpeg" alt="" height="400px" width="450px">
+             </div>
+             <div class="room_icon">
+                 <span><i class="fa-solid fa-heart"></i></span>
+                 <span> <i class="fa-solid fa-thumbs-up" id="thumbs"></i></span>
+             </div>
+             <div class="room_details">
+                 <h4>Executive cityscape Room</h4>
+                 <p>View the elegance and mordern comfort in the city from here.</p>
+                 <h5>Starting from <span>#60,000/night</span></h5>
+                 <button type="submit" id="book2" onclick="bookRoom2()">Book Now</button>
+             </div>
+        </div>
+
+        <div class="room_grid">
+            <div class="rooms_img">
+                 <img src="/asset/image/hotel5.jpeg" alt="" height="400px" width="450px">
+            </div>
+            <div class="room_icon">
+                 <span><i class="fa-solid fa-heart"></i></span>
+                 <span> <i class="fa-solid fa-thumbs-up" id="thumbs"></i></span>
+            </div>
+            <div class="room_details">
+                 <h4>Family Garden Retreat</h4>
+                 <p>Spacious and inviting, perfect for creating cherished memories.</p>
+                 <h5>Starting from <span>#50,000/night</span></h5>
+                 <button type="submit" id="book3" onclick="bookRoom3()">Book Now</button>
+            </div>
+        </div>
+
+        <div>
+            <div class="room_grid">
+                <div class="rooms_img">
+                      <img src="/asset/image/hotel img1.jpg" alt="" height="400px" width="450px">
+                </div>
+                <div class="room_icon">
+                      <span><i class="fa-solid fa-heart"></i></span>
+                      <span> <i class="fa-solid fa-thumbs-up" id="thumbs"></i></span>
+                </div>
+                <div class="room_details">
+                      <h4>Island Adventure</h4>
+                      <p>We want you to experience the view of nature and feel happy, <br> which is the best human therapy. </p>
+                      <h5>Starting from <span>#70,000/night</span></h5>
+                      <button type="submit" id="book4" onclick="bookRoom4()">Book Now</button>
+                </div>
+            </div>
+         </div>
+         
+          <div class="room_grid">
+               <div class="rooms_img">
+                   <img src="/asset/image/hotel img.jpeg" alt="" height="400px" width="450px">
+               </div>
+               <div class="room_icon">
+                   <span><i class="fa-solid fa-heart"></i></span>
+                   <span> <i class="fa-solid fa-thumbs-up" id="thumbs"></i></span>
+               </div>
+               <div class="room_details">
+                   <h4>Familiy Camping Rooms</h4>
+                   <p>Made specialy for Families to come together and express their <br> feelings
+                      for more love and respect.
+                   </p>
+                   <h5>Starting from <span>#60,000/night</span></h5>
+                   <button type="submit" id="book5" onclick="bookRoom5()">Book Now</button>
+               </div>
+          </div>
+  
+           <!-- <div class="room_grid">
+               <div class="rooms_img">
+                   <img src="/asset/image/hotel5.jpeg" alt="" height="400px" width="450px">
+               </div>
+               <div class="room_icon">
+                   <span><i class="fa-solid fa-heart"></i></span>
+                   <span> <i class="fa-solid fa-thumbs-up" id="thumbs"></i></span>
+               </div>
+               <div class="room_details">
+                   <h4>Family Garden Retreat</h4>
+                   <p>Spacious and inviting, perfect for creating cherished <br> memories.</p>
+                   <h5>Starting from <span>#50,000/night</span></h5>
+                   <button type="submit" id="book6" onclick="bookRoom6()">Book Now</button>
+               </div>
+           </div> -->
+    </div>
+
+    <div style="text-align: center;">
+        <div class="sub_header1">
+            <p>RESTURANT VIEW</p>
+            <div></div>
+        </div>
+        <h2>FEED YOUR EYES WITH THIS BEAUTIFUL VIEW WHILE YOU ENJOY OUR DELICIOUS MEAL</h2>
+    </div>
+    <secttion class="resturant" id="resturant">
+      <div class="resturant-view">
+            <div class="returant-image">
+                <img src="/asset/image/hotel.jpeg" alt="" height="400px" width="450px">
+            </div>
+            <div class="room_icon">
+                <span><i class="fa-solid fa-heart"></i></span>
+                <span> <i class="fa-solid fa-thumbs-up" id="thumbs"></i></span>
+            </div>
+            <div class="room_details">
+                <h4>Romantic Couple Dates</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In <br> placeat sunt officia. Explicabo, similique aspernatur!</p>
+            </div>
+      </div>
+
+      <div class="resturant-view">
+            <div class="returant-image">
+                <img src="/asset/image/hotel7.jpeg" alt="" height="400px" width="450px">
+            </div>
+            <div class="room_icon">
+                <span><i class="fa-solid fa-heart"></i></span>
+                <span> <i class="fa-solid fa-thumbs-up" id="thumbs"></i></span>
+            </div>
+            <div class="room_details">
+                <h4>Regular/Family Meal Gathering</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In <br> placeat sunt officia. Explicabo, similique aspernatur!</p>
+            </div>
+      </div>
+
+      <div class="resturant-view">
+            <div class="returant-image">
+                <img src="/asset/image/hotel6.jpeg" alt="" height="400px" width="450px">
+            </div>
+            <div class="room_icon">
+                <span><i class="fa-solid fa-heart"></i></span>
+                <span> <i class="fa-solid fa-thumbs-up" id="thumbs"></i></span>
+            </div>
+            <div class="room_details">
+                <h4>Adult Fun Space & Champaine lounge</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In <br> placeat sunt officia. Explicabo, similique aspernatur!</p>
+            </div>
+      </div>
+    </secttion>
+
+    <section class="services" id="services">
+        <div class="service_container">
+            <div class="service_content">
+                <div class="sub_header" >
+                    <p>SERVICES</p>
+                    <div></div>
+                </div>
+                <h2>WE HAVE ONLY GOOD TASTE</h2>
+
+              <ul class="service_list">
+                    <li>
+                        <span><i class="fas fa-shield-alt"></i></span>
+                        High Class Security
+                    </li>
+
+                    <li>
+                        <span><i class="fas fa-headphones"></i></span>
+                        Steady Entertainment
+                    </li>
+
+                    <li>
+                        <span><i class="fab fa-accessible-icon"></i></span>
+                        24 hours room service access 
+                    </li>
+
+                    <li>
+                        <span><i class="far fa-map"></i></span>
+                        Hotel Guide Support
+                    </li>
+              </ul>
+            </div>
+           
+        </div>
+    </section>
+
+    <section class="banner">
+        <div class="banner-content">
+            <div class="banner-card">
+                <h4>20+</h4>
+                <p>Properties Available</p>
+            </div>
+
+            <div class="banner-card">
+                <h4>400+</h4>
+                <p>Bookings Completed</p>
+            </div>
+
+            <div class="banner-card">
+                <h4>700+</h4>
+                <p>Happy Customers</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="explore" id="explore">
+        <div class="sub_header1">
+            <p>EXPLORE</p>
+            <div></div>
+        </div>
+        <h2 style="text-align: center; font-weight: 2rem;">What's New Here Today..</h2>
+
+       <div class="explore-ad">
+            <div class="explore-content">
+                <p class="description">5th June 2022</p>
+                <h4 id="menu">We have a New Menu Currently in our Hotel</h4>
+                <h5 id="menu1"  style="display: none; color: crimson;">
+                    *Butter Naan <br>*Japanese Sushi<br>
+                    African meals: <br> *Roasted Yam <br> *Native Rice
+                </h5>
+                <button type="button" onclick="seeMore()">Continue</button>
+            </div>
+       </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="logo">
+                    <h3>Royale Majestic Suite</h3>
+                </div>
+                <p class="footer-description">
+                    Discover a world of comfort,luxury, and adventure as you experience
+                    our selection of hotels, making every moment of yours truly extraordinary and memorable.
+                </p>
+                <button>Book Now</button>
+            </div>
+
+            <div class="footer-col">
+                <h4>QUICK LINKS</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Browse Destinations</a></li>
+                    <li><a href="#">Special Offers & Packages</a></li>
+                    <li><a href="#">Room Types & Amenities</a></li>
+                    <li><a href="#">Customer Reviews & Ratings</a></li>
+                    <li><a href="#">Travel Tips & Guides</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>OUR SERVICES</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Wellness & Recreation</a></li>
+                    <li><a href="#">Concierge Assistance</a></li>
+                    <li><a href="#">Flexible Booking Options</a></li>
+                    <li><a href="#">Customer Reviews & Ratings</a></li>
+                    <li><a href="#">Happiness</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col" id="footer-col">
+                <h4>CONTACT US</h4>
+                <ul class="footer-links">
+                    <li><a href="#">nwankwoebereanita53@gmail.com</a></li>
+                    <p style="color: silver;">+234 0806 5599 653</p>
+                    <p style="color: silver;">Cayman island,Mexico</p>
+                </ul>
+
+                <div class="footer-socials">
+                    <li class="fab fa-facebook"></li>
+                    <li class="fab fa-twitter"></li>
+                    <li class="fab fa-instagram"></li>
+                    <li class="fab fa-youtube"></li>
+                </div>
+                <h2 style="color: white; text-align: center;">OR</h2>
+                <form action="">
+                   <div class="form1">
+                        <h3>Fill In Your Info For Further Procedures</h3>
+                        <input type="text" id="name" placeholder="Cutomers Name:" required>
+                        <input type="number" id="number" placeholder="Valid Mobile No:" required> <br>
+                        <input type="email" id="email" placeholder="Valid Email:" required> 
+                        <input type="text" id="month" placeholder="Vaccation Month:" required> <br> 
+                        <input type="text" id="room" placeholder="Room Booked" required> <br>
+                        <input type="submit"  onclick="sendIn()" value="Send In" id="submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bar">
+            Copyright &copy; 2022 Web Development Mastery. All Rights Reserved
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com.scrollreveal"></script>
+    <script src="/asset/js/icons.js"></script>
+    <script src="/asset/js/code.js"></script>
+</body>
+</html>
